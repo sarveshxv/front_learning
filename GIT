@@ -1,0 +1,26 @@
+$ git log --oneline
+
+
+
+PULL
+$ git fetch
+$ git merge
+
+or
+$ git pull origin master
+
+$ git log --oneline
+
+
+
+
+$ git status
+
+
+PUSH
+
+$ git add .
+
+$ git commit -m "Resum Done"
+
+$ fir push origin master
