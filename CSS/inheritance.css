@@ -1,0 +1,11 @@
+/* By default elements inherit styles from their NEAREST parent elements */
+
+/* But some doesn't inherit.
+
+So to force inherit property from patent we use:*/
+
+button{
+    color: inherit; /* in this way color will be inherited from nearest parent parent */
+}
+
+/* Some properties are NOT INHERITABLE at all  */ 

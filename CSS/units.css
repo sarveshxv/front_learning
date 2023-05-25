@@ -1,0 +1,59 @@
+/* 
+
+%
+
+*/
+.parent_box{
+    border: 2px solid blueviolet;
+    height: 200px;
+    width: 200px;
+    background: #93f;
+}
+.child_box1{
+    height: 50%;
+    width: 50%;
+    background: bisque;
+}
+
+/* 
+
+em (compared with the FONT SIZE of ..PARENT..)
+
+1em = font size of parent (is it is 30px)
+2em = twice the size of parent (it will be 60px)
+
+*/
+article{
+    font-size: 15px;    /* parent size */
+    width: 300px;
+}
+h2{
+    font-size: 2em;     /* 2em = 2*30px = 60px */
+    border: 2px solid blueviolet;
+    width: 2em; /* 60+px */
+}
+h1{
+    font-size: 1.8sem;   
+    border: 2px solid blueviolet;
+    width: 1em;
+}
+
+/* 
+
+em (compared with the FONT SIZE of ..ROOT (HTML)..)
+
+ROOT:
+html {
+    font-size: 30px
+}
+
+1em = font size of root font size(is it is 30px)
+2em = twice the size of root font size (it will be 60px)
+
+*/
+h1{
+    font-size: 1rem; /* 30px, if root element font-size is 30px */
+}
+h2{
+    font-size: 2rem; /* 60px */
+}

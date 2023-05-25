@@ -1,0 +1,24 @@
+/* 
+
+
+BORDER
+
+
+*/
+.box{
+
+    /* SHOTRHAND */
+    border: 'up' 'right' 'down' 'left';
+    
+    /* EACH */
+    border-top: 1px;
+    border-bottom: 0cm;
+    border-left: 0ch;
+    border-right: 0cap;
+
+    /* MORE BORDER PROPERTIES  */
+    border-left-style: solid;
+    border-top-left-radius: 0%;  
+}
+
+

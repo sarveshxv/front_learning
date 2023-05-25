@@ -142,6 +142,21 @@ button:hover {
     background-color: olive;
 }
 
-button {
+
+ /* 
+ 
+ 
+ 
+ IMPORTANT  
+ 
+ Force to apply
+ 
+ 
+ */
+
+
+ button {
     background-color: magenta !important;
 }
+
+

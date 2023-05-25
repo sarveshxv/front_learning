@@ -1,0 +1,40 @@
+/* 
+
+block level element - div (occupies complete width)
+inline element - span (occupies need width only)
+
+display property allows us to change the behaviour of 'block level element' and 'inline element' 
+
+*/
+
+div{
+    display: inline; /* behaves like span*/
+}
+
+span {
+    display: block; /* behaves like div */
+}
+
+section{
+
+    display: inline;
+    /*  In inline block HEIGHT AND WIDHT ARE IGNORED,
+        MARGIN & PADDING push elements only horizontally, not vertically
+    */
+
+    display: block;
+    /*  Block elements break the flow of document.
+        WIDTH, HEIGHT, MARGIN & PADDING all can make difference 
+     */
+
+    display: inline-block;
+    /*  Behaves like inline element,
+    Unlike inline, this make difference with respect to WIDTH, HEIGHT, MARGIN & PADDING.
+     */
+
+    display: none;
+    /*  Hides the element from the display
+        Usefull with JS, if you want to hide and display elements time-to-time
+     */
+
+}

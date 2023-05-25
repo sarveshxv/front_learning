@@ -1,0 +1,36 @@
+/*
+
+rgba(0-255, 0-255, 0-255, 0-1)
+
+r, g, b, alpha
+
+0 = FULLY TRANSPARENT
+1 = FULLY OPAQUE
+
+
+*/
+#rgba{
+    background-color: rgba(255,255,255,0.5);
+}
+#hex{
+    background-color: #00aabb11;
+    /* 00 = transparent */
+    /* ff = opaque */
+}
+
+
+/* 
+
+
+OPACITY ( 0-1 )
+
+0 = FULLY TRANSPARENT
+1 = FULLY OPAQUE
+
+
+
+*/
+#opacity {
+    background: #000;
+    opacity: 0.5;
+}
