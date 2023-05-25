@@ -1,61 +1,78 @@
-/* * {
-    background-color: cyan;
-} */
+/* ID can only be used once in a single page, not like class */
+/* <spna> is used to design specific part of content, (use span if you need to design small part of ) */
 
-body {
-    background-color: #f1faee;
-}
 
-button {
-    font-size: 30px;
-    background-color: #a8dadc;
-}
 
+/* select multiple elements  */
 h1,h2 {
     color: #1d3557;
 }
 
-#signup{
-    background-color: #1d3557;
-    color: #f1faee;
-}
 
-span {
-    color: #457b9d;
-}
 
-.tag {
-    background-color: #e63946;
-    color: #f1faee;
-    font-size: 16px;
-}
-
-.post a {
-    color: #457b9d;
-    font-weight: 700;
-    text-decoration: none;
-}
-
+/* aka DESCENDANT SELECTORS
+all 'a' nested inside 'footer' */
 footer a {
     color: #e63946;
 }
 
-h2 + button {
+
+/* aka ADJACENT SELECTORs
+
+select 'p' created just after 'h1' 
+<h1>H!</h1>
+<p>Para</p>
+
+Select only the para that are immediately preceded by an h1 
+'+' sign is a JASON 'combinator' */
+h1 + p {
     font-size: 20px;
 }
 
+/* aka DIRECRT DESCENDANT or DIRECT CHILE
+
+if 'a' is nested just after footer, 1st nested CHILD 'a's only
+
+not applicable for the child of fisrt child */
 footer > a {
     color: #457b9d;
 }
+
+
+
+
+ /* ATTRIBUTE SELECTORS
+
+Select all input with 'type' attribute is set to 'password'  */
 
 input[type="password"] {
     color: greenyellow;
 }
 
+
+/* select all href which (*) matches/contains 'google' in it 
+<a href="www.google.com"> */
 a[href*="google"]{
     color: #1d3557;
 }
 
+
+/* 
+
+# PSEUDO CLASSES
+
+Keywords added to a selector that specifies a special ^^state^^ of the selected elemenmt(s)
+
+:active
+:checked
+:first
+:first-child
+:hover
+:not()
+:nth-child()
+:nth-of-type()
+
+*/
 
 .post a:hover {
     text-decoration: underline;
@@ -66,9 +83,32 @@ a[href*="google"]{
     background-color: #02c39a;
 }
 
+ /* Every 2nd */
 .post:nth-of-type(2n){
     background-color: #dfe8dc;
 }
+
+/* Only 2nd */
+.post:nth-of-type(2){
+    background-color: #dfe8dc;
+}
+
+
+/* 
+
+
+
+PSECUDO ELEMENTS
+
+::after
+::before
+::first-letter (firstr lette of every para)
+::first-line
+::selection (color of selected part/text)
+
+
+
+*/
 
 h2::first-letter {
     font-size: 50px;
@@ -81,6 +121,17 @@ p::first-line {
 p::selection {
     background-color: #fcbf49;
 }
+
+
+/* 
+
+SPECIFICITY
+
+Different styles to same element.
+
+More specific/presise selector will win
+
+*/
 
 .post button:hover {
     background-color: #e63946;
