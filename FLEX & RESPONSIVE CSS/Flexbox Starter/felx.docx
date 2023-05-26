@@ -1,0 +1,63 @@
+two axix are there in flex
+
+we can change the direction of flex box using
+flex-direction: row; is default
+flex-direction: row-reverse (reverse the flex)
+
+flex-direction: column/column-riverse
+--------------------------
+
+justify-content (along main axis)
+
+flex-start (start of flex based on flex direction)
+flex-end
+flex-center
+space-between
+space-around
+
+----------------------------
+
+flex-wrap
+
+wrap (avoid streaching, adjust content to next row/col)
+wrap-reverse (reverse the flex direction and wrap)
+noswrap (default, forcefully ajdust content)
+
+---------------------------------
+
+align-items (along across cross axix)
+
+start (top of the flex)
+
+---------------------------------
+
+align content (controls space between row/columns)
+(doesnt make changes if there is no WRAP)
+
+center (if
+justify-content-: center
+align-items: center
+align-items: flex-start
+align-content: center (makes everythin to center in a row)
+)
+
+-----------------------------------
+
+FLEX BASIS, GROW, SHRINK + (SHORTHAND)
+
+flex-BASIS
+-is HEIGHT of item when flex-direction is COLUMN
+-is WIDTH of item when flex-direction is ROW
+
+flex-GROW
+-grow to fill the extra space
+fill by HEIGHT if flex-direction is COLUMN
+fill by WIDTH if flex-direction is ROW
+
+flex-SHRINK
+shrink element is there is no space
+
+SHORTHAND
+flex: GROW, SHRINK, BASIS
+BASIS can be anyone which has units.
+grow and shrink are unitless
