@@ -1,0 +1,6 @@
+//  VARIABLE DEFINE 
+
+let // 
+const // value can not be changed
+var // old method to ctreate variables 
+
