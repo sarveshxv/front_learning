@@ -1,0 +1,8 @@
+
+@import "../FONTS/fonts.css";
+
+h1{
+    font-size: xx-large;
+    color: #436576;
+    font-family: 'josefin_sansregular', Courier, monospace;
+}
